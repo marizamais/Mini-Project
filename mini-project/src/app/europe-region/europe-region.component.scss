@@ -1,0 +1,18 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.countrylist-wrapper{
+    width:60%;
+    display:inline-block;
+}
+.capitaldetails-wrapper{
+    width:40%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-end:40px;
+}

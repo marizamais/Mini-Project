@@ -1,0 +1,12 @@
+
+<div class="countrylist-wrapper">
+    <ul *ngIf="countries.length">
+      <li *ngFor="let country of countries">{{country.name}} - {{country.capital}} - <a [routerLink]="['currency',country.currencies[0].code]"> {{country.currencies[0].symbol}} - {{country.currencies[0].code}}</a>
+      </li>
+    </ul>
+</div>
+
+<div class="samecurrency-wrapper">
+    <router-outlet></router-outlet>
+</div>
+    

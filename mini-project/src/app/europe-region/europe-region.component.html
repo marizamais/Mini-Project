@@ -1,0 +1,10 @@
+<div class="countrylist-wrapper">
+<ul *ngIf="countries.length">
+  <li *ngFor="let country of countries">{{country.name}} - <a [routerLink]="['capital',country.capital]">{{country.capital}}</a>
+  </li>
+</ul>
+</div>
+
+<div class="capitaldetails-wrapper">
+<router-outlet></router-outlet>
+</div>
